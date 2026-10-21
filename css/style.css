@@ -1,0 +1,76 @@
+.dash-header img {
+    width: 100px;
+}
+
+.dash-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+    background-color: antiquewhite;
+}
+
+
+.dash-wrapper {
+    display: grid;
+    grid-template-columns: 250px 2fr;
+}
+
+
+.sidebar {
+    background-color: darkgray;
+}
+
+
+.dash-content {
+    background-color: dodgerblue;
+}
+
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 20px;
+    gap: 20px;
+}
+
+.card {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+
+.dash-footer p {
+    text-align: center;
+}
+
+.body-split {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+    padding: 20px;
+}
+
+
+.project-container img {
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+
+    .dash-header {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .dash-wrapper {
+        grid-template-columns: 1fr;
+    }
+
+    .stats-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
